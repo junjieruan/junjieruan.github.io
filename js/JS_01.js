@@ -156,21 +156,3 @@ function scrollDown(){
 
     }
 })
-//
-//$(".photo").addClass("photoDown");
-//$(".txt-1").addClass("txtDown");
-//$(".l-logo").animate({top:"-50%",opacity:0},1000);
-//setTimeout(function(){
-//    $(".photo").removeClass("photoUp");
-//    $(".txt-1").removeClass("txtUp");
-//},1000)
-//function scrollUp(){
-//    $(".photo").addClass("photoUp");
-//    $(".txt-1").addClass("txtUp");
-//    $(".l-logo").animate({top:"19%",opacity:1},1000);
-//    setTimeout(function() {
-//        $(".txt-1").removeClass("txtDown");
-//        $(".photo").removeClass("photoDown");
-//    },1000)
-//}
-//
