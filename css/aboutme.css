@@ -1,0 +1,256 @@
+.navbar-inverse .navbar-nav>.active>a{
+    background-color: #1abc9c !important;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color:#fff;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+    background-color: #1abc9c;
+}
+
+.navbar-inverse .navbar-form .btn{
+    background-color: #1abc9c;
+    color: #fff;
+}
+
+body{
+   font-family: "Microsoft Yahei",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    color: #3d4450;
+}
+.rjj-body{
+    padding: 100px 0;
+}
+
+.row .alert-dismissible{
+    border: 1px solid #eaeaea;
+    border-radius: 8px 8px;
+    background-color: #cccccc;
+}
+
+.excerpt{
+    border: 1px solid #eaeaea;
+    border-radius: 8px 8px 0 0;
+    background-color: #fff;
+    padding: 20px 20px 20px 20px;
+}
+
+.excerpt .cat{
+    color: #fff;
+    background-color: #45bcf9;
+    padding: 3px 6px;
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    margin-right: 6px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.excerpt h2{
+    display: inline;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+}
+
+.excerpt h2 a{
+    color: #555;
+    text-decoration: none;
+}
+
+.excerpt h2 a:hover{
+                                                  /*点击变色*/
+    color: #45bcf9;
+}
+
+.excerpt .meta{
+    color: #838383;
+}
+.excerpt .meta span{
+    margin: 5px 10px 0 0;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.excerpt .meta .iconcolor{
+    color: lightskyblue;
+}
+.excerpt .meta .heartcolor{
+    color: palevioletred;
+}
+
+
+.excerpt .meta a{
+    color: limegreen;
+}
+
+.excerpt .text{
+    color: #838383;
+    padding-left: 10px;
+    text-indent: 2em;
+}
+
+.excerpt .label span{
+    font-weight: 100;
+    background-color: #cccccc;
+}
+.excerpt .label span:hover{
+    background-color:#777777;
+}
+
+.excerpt .label a{
+    color: #08d7a2;
+    font-size:14px;
+}
+
+.row .article-list article{
+    margin-top: 10px;
+}
+
+.row .article-list article:hover{
+    background-color: #dddddd;
+}
+
+.page {
+    text-align: center;
+}
+.page .pagination li a{
+    background-color:#d5d5d5;
+    color: #8c8c8c;
+    margin-right: 5px;
+}
+.page .pagination .active a{
+    background-color:#31b0d5;
+    color: #fff;
+}
+
+.page .pagination li a:hover{
+    background-color: #a6e1ec;
+}
+
+.page .pagination .totalpage{
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.panel-default .glyphicon{
+    color:#1abc9c;
+}
+
+.panel-heading{
+    background-color:#dddddd;
+}
+
+.media-object{
+    height:150px;
+    width: 150px;
+    float: left;
+}
+
+.media-body{
+    text-indent: 2em;
+    font-size: 15px;
+}
+
+.panel-footer{
+    background-color: #fff;
+    height: 80px;
+}
+.panel-footer li{
+    list-style: none;
+    float: left;
+    margin-left: 10px;
+}
+
+.panel-body .label{
+    display: inline-block;
+}
+
+.panel-body span{
+    margin: 10px;
+    height: 30px;
+    line-height: 30px;
+    width: 40%;
+    font-size: 14px;
+    font-family: "宋体";
+    font-weight: 50px;
+}
+
+.panel .pull-right{
+    color: #6e6e6e;
+}
+
+.panel .pull-right:hover{
+    color: orange;
+}
+
+#collapseOne li a{
+    text-decoration: none;
+}
+#collapseOne li a:hover{
+    color:#e4b9c0;
+}
+#collapseOne li  .badge{
+    background-color: #c7254e;
+    float: right;
+    clear: both;
+}
+
+.img-circle{
+    width: 39px;
+    height: 39px;
+}
+
+.media-body pre{
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.footbar{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+}
+.footbar .container{
+    height: 50px;
+    width: 100%;
+    background-color: #6e6e6e;
+    color: #fff;
+}
+.footbar .container a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.footbar .container a:hover{
+    color: #c7254e;
+}
+
+
+#rollbar{
+    width: 50px;
+    height: 60px;
+    position: fixed;
+    bottom: 30px;
+
+    right: 50px;
+    opacity: .4;
+}
+
+
+.ThisWebstyle p{
+    text-indent: 2em;
+    font-size: 17px
+}
+
+
+.article1{
+    background-color: #ffffff;
+    border: 5px;
+    padding: 15px;
+    margin: 20px;
+}

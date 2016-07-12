@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <!--<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/rollbar.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">               <!--头部  navbar-inverse白字黑框 navbar-fixed-top固定在顶部-->
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="jpg/blogbrand.png" style="height: 40px;margin-top: -9px">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active "><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 主页</a></li>
+                    <li><a href="ThisWeb.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 关于本站</a></li>
+                    <li><a href="visit.html"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> 留言墙</a></li>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group ">
+                        <input type="text" class="form-control" placeholder="请输入要搜索的关键字">
+                    </div>
+                    <button type="submit" class="btn">搜索</button>
+                </form>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+</nav>
+
+<div class="rjj-body" style="background-color: #f9f9f9">                 <!--body底色-->
+    <div class="container">
+        <div class="row">                                         <!--栅格系统-->
+            <div class="col-md-8">            <!--内容主体：1.每日提示 2.文章列表 3.分页条-->
+                <div class="alert alert-default alert-dismissible " role="alert" style="color: #838383">   <!--警告框底色-->
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">x</button>
+                    If you don't bird me,I won't bird you,too.
+                    <div class="ticon pull-right">  <!--pull-right 下拉菜单中的对齐 -->
+                        <img src="http://mjs.sinaimg.cn/wap/online/public/images/weather/day/yin.gif?v=2016070210" height="20" width="20" >广州  22 ~ 33℃
+                    </div>
+                </div>
+                <div class="article-list">                                   <!--文章列表-->
+                    <article class="excerpt excerpt-first">                 <!--article H5新标签  blog中文本-->
+                       <header>
+                           <a class="cat" href="#">
+                               Ajax应用
+                               <i></i>
+                           </a>
+                           <h2>
+                               <a class="" href="#" title="jQuery中的Ajax">jQuery中的Ajax</a>
+                           </h2>
+                       </header>
+                        <p class="meta">
+                            <span class="glyphicon glyphicon-time iconcolor"></span>2016/6/28    <!--引用小图标 span中不能有文本-->
+                            <span class="glyphicon glyphicon-eye-open iconcolor"></span>浏览(<a href="#">279</a>)
+                            <span class="glyphicon glyphicon-comment iconcolor"></span>评论(<a href="#">10</a>)
+                            <span class="glyphicon glyphicon-heart-empty heartcolor">
+                            </span>(<a href="#">91</a>)                            <!--iconcolor改变图标颜色-->
+                        </p>
+                        <p class="text">
+                          load()方法，$.get()和$.post()方法，$.getScript()和$.getJSON()方法
+                        </p>
+                        <p class="label">
+                            <span class="label label-default">#jQuery</span>   <!--引用标签-->
+                            <span class="label label-default">#Ajax</span>
+                            <span class="label label-default">#PHP</span>
+                            <a href="blog01.html" class=" pull-right">继续阅读 »</a>
+                        </p>
+                    </article>
+                    <article class="excerpt excerpt-first">                 <!--article H5新标签  blog中文本-->
+                        <header>
+                            <a class="cat" href="#">
+                                jQuery
+                                <i></i>
+                            </a>
+                            <h2>
+                                <a class="" href="#" title="有助jQuery理解的一些网站">
+                                    有助jQuery理解的一些网站</a>
+                            </h2>
+                        </header>
+                        <p class="meta">
+                            <span class="glyphicon glyphicon-time iconcolor"></span>2016/6/27   <!--引用小图标 span中不能有文本-->
+                            <span class="glyphicon glyphicon-eye-open iconcolor"></span>浏览(<a href="#">121</a>)
+                            <span class="glyphicon glyphicon-comment iconcolor"></span>评论(<a href="#">1</a>)
+                            <span class="glyphicon glyphicon-heart-empty heartcolor" style="color: palevioletred"></span>(<a href="#">41</a>)
+                        </p>
+                        <p class="text">
+                            有助jQuery理解的一些网站
+                        </p>
+                        <p class="label">
+                            <span class="label label-default">#jQuery</span>   <!--引用标签-->
+                            <a href="jquerylearning.html" class=" pull-right">继续阅读 »</a>
+                        </p>
+                    </article>
+                    <article class="excerpt excerpt-first">                 <!--article H5新标签  blog中文本-->
+                        <header>
+                            <a class="cat" href="#">
+                                CSS3
+                                <i></i>
+                            </a>
+                            <h2>
+                                <a class="" href="#" title="CSS3新增功能总结">
+                                    CSS3新增功能总结</a>
+                            </h2>
+                        </header>
+                        <p class="meta">
+                            <span class="glyphicon glyphicon-time iconcolor"></span>2016/6/27   <!--引用小图标 span中不能有文本-->
+                            <span class="glyphicon glyphicon-eye-open iconcolor"></span>浏览(<a href="#">121</a>)
+                            <span class="glyphicon glyphicon-comment iconcolor"></span>评论(<a href="#">1</a>)
+                            <span class="glyphicon glyphicon-heart-empty heartcolor" style="color: palevioletred"></span>(<a href="#">41</a>)
+                        </p>
+                        <p class="text">
+                            CSS3和CSS相比新增了一些功能：动画效果、选择器...
+                        </p>
+                        <p class="label">
+                            <span class="label label-default">#CSS</span>   <!--引用标签-->
+                            <span class="label label-default">#CSS3</span>
+                            <a href="CSS3-01.html" class=" pull-right">继续阅读 »</a>
+                        </p>
+                    </article>
+                    <article class="excerpt excerpt-first">                 <!--article H5新标签  blog中文本-->
+                        <header>
+                            <a class="cat" href="#">
+                                定位
+                                <i></i>
+                            </a>
+                            <h2>
+                                <a class="" href="#" title="relative和sbsolute">
+                                    相对定位relative和相对定位absolute</a>
+                            </h2>
+                        </header>
+                        <p class="meta">
+                            <span class="glyphicon glyphicon-time iconcolor"></span>2016/6/27   <!--引用小图标 span中不能有文本-->
+                            <span class="glyphicon glyphicon-eye-open iconcolor"></span>浏览(<a href="#">67</a>)
+                            <span class="glyphicon glyphicon-comment iconcolor"></span>评论(<a href="#">0</a>)
+                            <span class="glyphicon glyphicon-heart-empty heartcolor" style="color: palevioletred"></span>(<a href="#">10</a>)
+                        </p>
+                        <p class="text">
+                            <strong>CSS 相对定位（设置为相对定位的元素框会偏移某个距离。元素仍然保持其未定位前的形状，它原本所占的空间仍保留。）</strong>
+                            ：相对定位是一个非常容易掌握的概念。如果对一个元素进行相对定位
+                            ，它将出现在它所在的位置上。然后，可以通过设置垂直或水平位置，让这个元素“相对于”它的起点进行移动。<br/><br/>
+                            <strong>CSS 绝对定位（设置为绝对定位的元素框从文档流完全删除，并相对于其包含块定位，包含块可能是文档中的另一个元素或者是初始包含块。
+                                元素原先在正常文档流中所占的空间会关闭，就好像该元素原来不存在一样。元素定位后生成一个块级框，而不论原来它在正常流中生成何种类型的框。）</strong>：绝对定位使元素的位置与文档流无关，因此不占据空间。这一点与相对
+                            定位不同，相对定位实际上被看作普通流定位模型的一部分，因为元素的位置相对于它在普通流中的位置。
+                            （普通流中其它元素的布局就像绝对定位的元素不存在一样，其可以覆盖页面上其他元素，设置z-index即可）<br/><br/>
+                            注意：绝对定位的元素的位置相对于<i>最近的已定位祖先元素</i>，如果元素没有已定位的祖先元素，那么它的位置相对于<i>最初的包含块</i>。
+                            （根据用户代理的不同，最初的包含块可能是画布或 HTML 元素）
+                        </p>
+                        <p class="label">
+                            <a href="#" class=" pull-right">继续阅读 »</a>
+                        </p>
+                    </article>
+                    <article class="excerpt excerpt-first">                 <!--article H5新标签  blog中文本-->
+                        <header>
+                            <a class="cat" href="#">
+                                JavaScript笔记
+                                <i></i>
+                            </a>
+                            <h2>
+                                <a class="" href="#" title="JavaScript学习笔记之数组的深拷贝 ">
+                                    JavaScript学习笔记之数组的深拷贝 </a>
+                            </h2>
+                        </header>
+                        <p class="meta">
+                            <span class="glyphicon glyphicon-time iconcolor"></span>2016/7/7   <!--引用小图标 span中不能有文本-->
+                            <span class="glyphicon glyphicon-eye-open iconcolor"></span>浏览(<a href="#">11</a>)
+                            <span class="glyphicon glyphicon-comment iconcolor"></span>评论(<a href="#">0</a>)
+                            <span class="glyphicon glyphicon-heart-empty heartcolor" style="color: palevioletred"></span>(<a href="#">2</a>)
+                        </p>
+                        <p class="text">
+                            由于JavaScript的数据分为‘原始类型’和‘引用类型’，数组Array是引用类型，与c语言类似，对数组
+                            直接用‘=’号赋值的话，赋给变量的值只是该数组的引用地址（c语言中叫指针），并没有实现数组数据
+                            的拷贝，两个数组共享同一组数据，也就是说一旦修改这两个数组中的任何一方，该修改也会在另一方体现出来。
+                        </p>
+                        <p class="label">
+                            <span class="label label-default">#JavaScript</span>     <!--引用标签-->
+                            <a href="JavaScript1.html" class=" pull-right">继续阅读 »</a>
+                        </p>
+                    </article>
+                    <article class="excerpt excerpt-first">                 <!--article H5新标签  blog中文本-->
+                        <header>
+                            <a class="cat" href="#">
+                                前端
+                                <i></i>
+                            </a>
+                            <h2>
+                                <a class="" href="#" title="怎么让百度蜘蛛快速收录自己的网站">
+                                    怎么让百度蜘蛛快速收录自己的网站</a>
+                            </h2>
+                        </header>
+                        <p class="meta">
+                            <span class="glyphicon glyphicon-time iconcolor"></span>2016/6/24   <!--引用小图标 span中不能有文本-->
+                            <span class="glyphicon glyphicon-eye-open iconcolor"></span>浏览(<a href="#">39</a>)
+                            <span class="glyphicon glyphicon-comment iconcolor"></span>评论(<a href="#">0</a>)
+                            <span class="glyphicon glyphicon-heart-empty heartcolor" style="color: palevioletred"></span>(<a href="#">1</a>)
+                        </p>
+                        <p class="text">
+                            新建的博客，论坛等网站如何可以让百度快速收录呢？网站收录对于那些新入门的站长来说就有些困难了
+                            。没有有经验的网站前辈来带，没有足够强劲的链接，想让各大搜索引擎立刻收录你的小站谈何容易呀！
+                            呵呵，万事开头难，世事似乎并非如此，但是想让百度收录你的新站却是相当容易的。没事的时候随便做
+                            做以下几件小事就ok了：一、网站域名。网站的域名一定要和网站主题相符，这样可以利用百度对你站的
+                            信誉评价。二、百度网站登录。提交百度网站登陆是让百度收录网站的的第一步骤。百度登陆的网址是h
+                            ttp://www.baidu.com/search/url_submit.html 但自百度调整算法以后，仅靠百度登陆就想让自己的网
+                            站被百度收录相对困难一点了。三、软文营销。这个是网站主要推广的方法。被各.......
+                        </p>
+                        <p class="label">
+                            <span class="label label-default">#百度爬虫</span>     <!--引用标签-->
+                            <span class="label label-default">#收录</span>
+                            <a href="#" class=" pull-right">继续阅读 »</a>
+                        </p>
+                    </article>
+                    <article class="excerpt excerpt-first">                 <!--article H5新标签  blog中文本-->
+                        <header>
+                            <a class="cat" href="#">
+                               ASP.NET MVC
+                                <i></i>
+                            </a>
+                            <h2>
+                                <a class="" href="#" title="在IIS8上部署网站时如何设置使用域名和IP均可访问：">
+                                    在IIS8上部署网站时如何设置使用域名和IP均可访问：</a>
+                            </h2>
+                        </header>
+                        <p class="meta">
+                            <span class="glyphicon glyphicon-time iconcolor"></span>2016/6/23   <!--引用小图标 span中不能有文本-->
+                            <span class="glyphicon glyphicon-eye-open iconcolor"></span>浏览(<a href="#">32</a>)
+                            <span class="glyphicon glyphicon-comment iconcolor"></span>评论(<a href="#">0</a>)
+                            <span class="glyphicon glyphicon-heart-empty heartcolor" style="color: palevioletred"></span>(<a href="#">3</a>)
+                        </p>
+                        <p class="text">
+                            只需保证主机头、IP、端口有一项不同即可：....
+                        </p>
+                        <p class="label">
+                            <span class="label label-default">#IIS8</span>     <!--引用标签-->
+                            <a href="#" class=" pull-right">继续阅读 »</a>
+                        </p>
+                    </article>
+                </div>
+                <div class="page">                                              <!--分页条-->
+                    <ul class="pagination pagination-sm">
+                        <!--<li><a href="#">首页</a></li>-->
+                        <li class="active"><a href="#">1</a></li>
+                        <li><span class="totalpage">共-1-页</span></li>
+                    </ul>
+                 </div>
+             </div>
+            <div class="col-md-4"> <!--侧边栏内容   1.本站介绍 2.文章分类 3.精品文章 4.访客留言 5.热点知识-->
+                     <aside>
+                        <div class="panel panel-default">          <!--本站介绍 pannel面板：头部 内容 脚注-->
+                            <div class="panel-heading">
+                                <span class="glyphicon glyphicon-user"></span>
+                                广工潇洒哥</div>
+                            <div class="panel-body">
+                                <div class="media">                                     <!--媒体对象-->
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="jpg/wechat.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        这是一个程序员的独立博客站，主要用于分享与编程技术相关的内容， 同时这里也是博主
+                                        记录工作学习中遇到的问题及其解决方案的地方。更多信息请点击：<a href="ThisWeb.html">关于本站.</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <ul>
+                                    <li><a href="https://github.com"><img src="jpg/github.png"></a></li>
+                                    <li><a href="https://weibo.com"><img src="jpg/xlwb.png"></a></li>
+                                    <li><a href="https://www.douban.com"><img src="jpg/douban.png"></a></li>
+                                    <li><a href="https://www.twitter.com"><img src="jpg/twitter.png"></a></li>
+                                </ul>
+                            </div>
+                        </div>               <!--1.本站介绍-->
+
+                        <div class="panel panel-default">
+                             <div class="panel-heading">
+                                 <span class="glyphicon glyphicon glyphicon-tags"></span>
+                                 文以类聚
+                             </div>
+                             <div class="panel-body">
+                                     <span class="label label-default">ASP.NET MVC   (8)</span>
+                                     <span class="label label-primary">开源工具  (5)</span><br/>
+                                     <span class="label label-success">前端  (11)</span>
+                                     <span class="label label-info">网络舆情  (1)</span><br/>
+                                     <span class="label label-warning">复杂网络  (0)</span>
+                                     <span class="label label-danger">推荐系统  (1)</span>
+                             </div>
+                         </div>               <!--2.文章分类-->
+                       <div class="panel  panel-default">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-leaf"></span>
+                        炙手可热
+                        <span class=" glyphicon glyphicon-remove-circle pull-right"></span>
+                        <a data-toggle="collapse" href="#collapseOne">   <!--Collapse插件  data-toggle+href+折叠对象ul中id="collapseOne"-->
+                            <span class="glyphicon glyphicon-upload pull-right"></span>
+                        </a>
+                    </div>
+                    <ul class="list-group" id="collapseOne">                             <!--列表组-->
+                        <li class="list-group-item">
+                            <span class="posttitle"><a href="#">开篇</a></span>       <!--徽章  样式分离-->
+                            <span class="badge">287</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="posttitle"><a href="#">如何使用Bootstrap typeahead插件...</a></span>
+                            <span class="badge">123</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="posttitle"><a href="#">使用Lucene对分词结果进行倒排索引</a></span>
+                            <span class="badge">68</span>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="posttitle"><a href="#">总结软件架构特征</a></span>
+                            <span class="badge">50</span>
+                        </li>
+                    </ul>
+                </div>              <!--3.精品文章-->
+                       <div class="panel  panel-default">
+                               <div class="panel-heading">
+                                   <span class="glyphicon glyphicon-tree-deciduous"></span>
+                                   雁过留声
+                                   <span class=" glyphicon glyphicon-remove-circle pull-right"></span>
+                                   <a data-toggle="collapse" href="#collapseTwo">   <!--Collapse插件  data-toggle+href+折叠对象ul中id="collapseOne"-->
+                                       <span class="glyphicon glyphicon-upload pull-right"></span>
+                                   </a>
+                               </div>
+                               <ul class="list-group" id="collapseTwo">                             <!--列表组-->
+                                   <li class="list-group-item">
+                                       <div class="media">                                                 <!--媒体对象-->
+                                           <div class="media-left">
+                                               <a href="#">
+                                                   <img class="media-object img-circle" src="jpg/visitor1.jpg"  alt="">   <!--圆形图片-->
+                                               </a>
+                                           </div>
+                                           <div class="media-body">
+                                               <pre>好生羡慕</pre>                        <!--代码块显示-->
+                                           </div>
+                                       </div>
+                                   </li>
+                                   <li class="list-group-item">
+                                       <div class="media">                                                 <!--媒体对象-->
+                                           <div class="media-left">
+                                               <a href="#">
+                                                   <img class="media-object img-circle" src="jpg/visitor1.jpg"  alt="">   <!--圆形图片-->
+                                               </a>
+                                           </div>
+                                           <div class="media-body">
+                                               <pre>好生羡慕</pre>                        <!--代码块显示-->
+                                           </div>
+                                       </div>
+                                   </li>
+                                   <li class="list-group-item">
+                                       <div class="media">                                                 <!--媒体对象-->
+                                           <div class="media-left">
+                                               <a href="#">
+                                                   <img class="media-object img-circle" src="jpg/visitor2.png"  alt="">   <!--圆形图片-->
+                                               </a>
+                                           </div>
+                                           <div class="media-body">
+                                               <pre>我是傻逼</pre>                        <!--代码块显示-->
+                                           </div>
+                                       </div>
+                                   </li>
+
+                               </ul>
+                       </div>               <!--4.访客留言-->
+                               <!--<span class=" glyphicon glyphicon-remove-circle pull-right" data-toggle="collapse" href="#collapseOne"></span>-->
+                               <!--<span class="panel-toggle glyphicon glyphicon-upload pull-right"></span>-->
+            </aside>
+            </div>
+         </div>
+    </div>
+</div>
+
+<footer>                                                              <!--尾部-->
+    <div class="footbar">
+        <div class="container">
+        <div class=" navbar-static-bottom">
+            Copyright © 2016 <a href="#">RJJblog</a>  |联系我:
+            <a href="#">1259251208@qq.com</a>  |  All Rights Reserved.|  豫ICP备16019396号-1
+        </div>
+    </div>
+    </div>
+</footer>
+
+<a href="javascript:;" id="rollbar" title="回到顶端">                          <!--快速返回头部图标-->
+    <img src="jpg/ico-rocket.png" height="64" width="64"></img>
+</a>
+
+</body>
+</html>
+
+<!--问题总结：
+         未解决问题：1.媒体对象中----文字如何围绕图片分布
+                     2.下拉面板中----如何实现面板折叠和面板删除
+                     3.一键返回顶端功能-->

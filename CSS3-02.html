@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <!--<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/rollbar.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">               <!--头部  navbar-inverse白字黑框 navbar-fixed-top固定在顶部-->
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="jpg/blogbrand.png" style="height: 40px;margin-top: -9px">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active "><a href="aboutme.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 主页</a></li>
+                    <li><a href="ThisWeb.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 关于本站</a></li>
+                    <li><a href="visit.html"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> 留言墙</a></li>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group ">
+                        <input type="text" class="form-control" placeholder="请输入要搜索的关键字">
+                    </div>
+                    <button type="submit" class="btn">搜索</button>
+                </form>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+</nav>
+
+<div class="rjj-body" style="background-color: #f9f9f9">                 <!--body底色-->
+    <div class="container">
+        <div class="row">                                         <!--栅格系统-->
+            <div class="col-md-8">            <!--内容主体：1.每日提示 2.文章列表 3.分页条-->
+
+                <div class="article-list">                                   <!--文章列表-->
+                    <article class="excerpt excerpt-first">                 <!--article H5新标签  blog中文本-->
+                        <div class="page-header" style="text-align: center">
+                            <h1>CSS3新功能总结<small>Page2</small></h1><br/>
+                            <p>关键词：CSS &nbsp; CSS3 &nbsp;HTML </p>
+                        </div>
+                        <div class="section1" style="font-size: 16px">
+                            <h2>CSS3选择器详解</h2><br/>
+                            <h3>1.属性选择器</h3><br/>
+                            <p>在CSS3中，追加了三个属性选择器，分别为：<span class="label label-info">[attr*=val]、[attr^=val]、[attr$=val]</span>使其有通配符概念</p>
+                            <div class="alert alert-success" role="alert">
+                                <p>attr表示属性名，如id,class等，val表示属性值<br/>[attr*=val]：属性中包含val字符<br/>[attr^=val]：属性中首字符包含val<br/>[attr$=val]：属性中结束字符包含val</p>
+                            </div>
+                            <p>新建一个<span class="label label-default">css3 1.html</span></p>
+                            <img src="jpg/css24.png" style="width:300px;">
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css25.png"><br/><br/>
+                            <hr/>
+
+                            <h3>2.结构性伪类选择器——伪元素选择器</h3><br/>
+                            <p>结构性伪类选择器由伪类选择器、伪元素选择器和结构性伪类选择器组成，这里讲的是伪元素选择器</p>
+                            <div class="alert alert-success" role="alert">
+                                <p>四个伪元素选择器：first-line、first-letter、before、after<br/>first-line：改变指定元素中第一行样式<br/>
+                                    first-letter：改变指定元素中第一个字样式<br/>before：在某个元素之前插入内容<br/>after：在某个元素后面插入内容</p>
+                            </div>
+                            <p>新建一个<span class="label label-default">css3 2.html</span></p>
+                            <img src="jpg/css26.png" style="width:300px;">
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css27.png"><br/><br/>
+                            <hr/>
+
+                            <h3>3.结构性伪类选择器——结构性伪类选择器</h3><br/>
+                            <p>在CSS3中，结构性伪类选择器的特征是允许开发者根据文档的结构来指定元素的样式</p>
+                            <div class="alert alert-success" role="alert">
+                                <p><strong>PartI：四个最基本的：root、not、empty、target</strong><br/>root：将样式绑在页面根元素中，即页面的html部分中<br/>
+                                    not：对某元素添加样式，并使里面某个子元素不使用该样式<br/>empty：当前元素内容为空白时使用的样式
+                                    <br/>target：该样式只当用户点击页面中超链接并跳转到target元素后起作用</p>
+                            </div>
+                            <p>新建一个<span class="label label-default">css3 3.html</span></p>
+                            <img src="jpg/css28.png" style="width:300px;"><br/>
+                            <img src="jpg/css29.png" style="width:300px;">
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css30.png"><br/><br/>
+
+                            <div class="alert alert-success" role="alert">
+                                <p><strong>PartII：first-child、last-child、nth-child、nth-last-child、nth-child(odd)、nth-child(even)、nth-last-child(odd)、nth-last-child(even)</strong>
+                                    <br/>first-child：对一个父元素的第一个子元素指定样式<br/>
+                                    last-child：对最后一个子元素指定样式<br/>nth-child：对指定序号子元素设置样式
+                                    <br/>nth-last-child：倒序，同上<br/>nth-child(odd)：第奇数个子元素，odd改为even表示偶数个</p>
+                            </div>
+                            <p>新建一个<span class="label label-default">css-1.html</span></p>
+                            <img src="jpg/css31.png" style="width:300px;"><br/>
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css32.png"><br/><br/>
+
+                            <div class="alert alert-success" role="alert">
+                                <p><strong>PartIII：nth-of-type、nth-last-of-type</strong><br/>nth-of-type：计算第奇偶个子元素时，只针对同类型元素计算<br/>
+                                    nth-last-of-type：倒序，同上<br/></p>
+                            </div>
+                            <p>新建一个<span class="label label-default">css-2.html</span></p>
+                            <img src="jpg/css33.png" style="width:300px;"><br/>
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css34.png"><br/><br/>
+
+                            <div class="alert alert-success" role="alert">
+                                <p><strong>PartIV：循环使用样式</strong><br/>nth-child(n)：
+                                    格式：n:an+b，a表示每组个数,b表示该元素在组内序号<br/>
+                                   </p>
+                            </div>
+                            <p>新建一个<span class="label label-default">css-3.html</span></p>
+                            <img src="jpg/css35.png" style="width:300px;"><br/>
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css36.png"><br/><br/>
+
+
+                            <div class="alert alert-success" role="alert">
+                                <p><strong>PartV：only-child</strong><br/>only-child：给只有一个列表项的元素设置样式，此时可用only-child代替nth-child</p>
+                            </div>
+                            <p>新建一个<span class="label label-default">css-4.html</span></p>
+                            <img src="jpg/css37.png" style="width:300px;"><br/>
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css38.png"><br/><br/>
+                            <hr/>
+
+
+                            <h3>4.UI元素状态伪类选择器</h3><br/>
+                            <p>指定的样式只有当元素处于某种状态下时才起作用，默认状态下不起作用。此处介绍<span class="label label-info">E：hover</span>、
+                                <span class="label label-info">E：focus</span>、<span class="label label-info">E：active</span>、<span class="label label-info">E：enabled</span>、
+                                <span class="label label-info">E：disabled</span>、
+                                <span class="label label-info">E：checked</span><br/>
+                            <div class="alert alert-success" role="alert">
+                                <p><span class="label label-info">E：hover</span>：鼠标经过时</p>
+                                <p><span class="label label-info">E：focus</span>：获取焦点时</p>
+                                <p><span class="label label-info">E：active</span>：鼠标按住不放时</p>
+                                <p><span class="label label-info">E：checked</span>：勾选时</p>
+                            <p><span class="label label-info">E：enabled</span>：设置可用状态的样式</p>
+                            <p><span class="label label-info">E：disabled</span>：不可用状态</p>
+
+                            </div>
+                            </p>
+                            <p>新建一个<span class="label label-default">css1-1.html</span>和<span class="label label-default">css1-2.html</span></p>
+                            <img src="jpg/css39.png" style="width:300px;"><br/>
+                            <img src="jpg/css40.png" style="width:300px;"><br/>
+                            <p>图二运行效果如下：</p>
+                            <img src="jpg/css40-1.png"><br/><br/>
+
+                            <p>新建一个<span class="label label-default">css1-3.html</span>测试enabled和disabled</p>
+                            <img src="jpg/css41.png" style="width:300px;"><br/>
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css42.png"><br/><br/>
+                            <hr/>
+
+                            <h3>5.通用兄弟元素伪类选择器</h3><br/>
+                            <p>新建一个<span class="label label-default">css-4.html</span></p>
+                            <img src="jpg/css43.png" style="width:300px;"><br/>
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css44.png"><br/><br/>
+                        </div>
+                    </article>
+
+                </div>
+                <div class="page">                                              <!--分页条-->
+                    <ul class="pagination pagination-sm">
+                        <!--<li><a href="#">首页</a></li>-->
+                        <li>
+                            <a href="CSS3-01.html" aria-label="Previous">
+                                <span aria-hidden="true">上一页</span>
+                            </a>
+                        </li>
+                        <li><a href="CSS3-01.html">1</a></li>
+                        <li class="active"><a href="#">2</a></li>
+                        <li><a href="CSS3-03.html">3</a></li>
+                        <li>
+                            <a href="CSS3-03.html" aria-label="Next">
+                                <span aria-hidden="true">下一页</span>
+                            </a>
+                        </li>
+                        <li><a href="#">末页</a></li>
+                        <li><span class="totalpage">共-3-页</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4"> <!--侧边栏内容   1.本站介绍 2.文章分类 3.精品文章 4.访客留言 5.热点知识-->
+                <aside>
+                    <div class="panel panel-default">          <!--本站介绍 pannel面板：头部 内容 脚注-->
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-user"></span>
+                            广工潇洒哥</div>
+                        <div class="panel-body">
+                            <div class="media">                                     <!--媒体对象-->
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="jpg/wechat.jpg">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    这是一个程序员的独立博客站，主要用于分享与编程技术相关的内容， 同时这里也是博主
+                                    记录工作学习中遇到的问题及其解决方案的地方。更多信息请点击：<a href="ThisWeb.html">关于本站.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <ul>
+                                <li><a href="https://github.com"><img src="jpg/github.png"></a></li>
+                                <li><a href="https://weibo.com"><img src="jpg/xlwb.png"></a></li>
+                                <li><a href="https://www.douban.com"><img src="jpg/douban.png"></a></li>
+                                <li><a href="https://www.twitter.com"><img src="jpg/twitter.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>               <!--1.本站介绍-->
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon glyphicon-tags"></span>
+                            文以类聚
+                        </div>
+                        <div class="panel-body">
+                            <span class="label label-default">ASP.NET MVC   (8)</span>
+                            <span class="label label-primary">开源工具  (5)</span><br/>
+                            <span class="label label-success">前端  (11)</span>
+                            <span class="label label-info">网络舆情  (1)</span><br/>
+                            <span class="label label-warning">复杂网络  (0)</span>
+                            <span class="label label-danger">推荐系统  (1)</span>
+                        </div>
+                    </div>               <!--2.文章分类-->
+                    <div class="panel  panel-default">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-leaf"></span>
+                            炙手可热
+                            <span class=" glyphicon glyphicon-remove-circle pull-right"></span>
+                            <a data-toggle="collapse" href="#collapseOne">   <!--Collapse插件  data-toggle+href+折叠对象ul中id="collapseOne"-->
+                                <span class="glyphicon glyphicon-upload pull-right"></span>
+                            </a>
+                        </div>
+                        <ul class="list-group" id="collapseOne">                             <!--列表组-->
+                            <li class="list-group-item">
+                                <span class="posttitle"><a href="#">开篇</a></span>       <!--徽章  样式分离-->
+                                <span class="badge">287</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="posttitle"><a href="#">如何使用Bootstrap typeahead插件...</a></span>
+                                <span class="badge">123</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="posttitle"><a href="#">使用Lucene对分词结果进行倒排索引</a></span>
+                                <span class="badge">68</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="posttitle"><a href="#">总结软件架构特征</a></span>
+                                <span class="badge">50</span>
+                            </li>
+                        </ul>
+                    </div>              <!--3.精品文章-->
+                    <div class="panel  panel-default">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-tree-deciduous"></span>
+                            雁过留声
+                            <span class=" glyphicon glyphicon-remove-circle pull-right"></span>
+                            <a data-toggle="collapse" href="#collapseTwo">   <!--Collapse插件  data-toggle+href+折叠对象ul中id="collapseOne"-->
+                                <span class="glyphicon glyphicon-upload pull-right"></span>
+                            </a>
+                        </div>
+                        <ul class="list-group" id="collapseTwo">                             <!--列表组-->
+                            <li class="list-group-item">
+                                <div class="media">                                                 <!--媒体对象-->
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="jpg/visitor1.jpg"  alt="">   <!--圆形图片-->
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <pre>好生羡慕</pre>                        <!--代码块显示-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">                                                 <!--媒体对象-->
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="jpg/visitor1.jpg"  alt="">   <!--圆形图片-->
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <pre>好生羡慕</pre>                        <!--代码块显示-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">                                                 <!--媒体对象-->
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="jpg/visitor2.png"  alt="">   <!--圆形图片-->
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <pre>我是傻逼</pre>                        <!--代码块显示-->
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>               <!--4.访客留言-->
+                    <!--<span class=" glyphicon glyphicon-remove-circle pull-right" data-toggle="collapse" href="#collapseOne"></span>-->
+                    <!--<span class="panel-toggle glyphicon glyphicon-upload pull-right"></span>-->
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>                                                              <!--尾部-->
+    <div class="footbar">
+        <div class="container">
+            <div class=" navbar-static-bottom">
+                Copyright © 2016 <a href="#">RJJblog</a>  |联系我 :
+                <a href="#">1259251208@qq.com</a>  |  All Rights Reserved.|  豫ICP备16019396号-1
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="javascript:;" id="rollbar" title="回到顶端">                          <!--快速返回头部图标-->
+    <img src="jpg/ico-rocket.png" height="64" width="64"></img>
+</a>
+
+</body>
+</html>
+
+<!--问题总结：
+         未解决问题：1.媒体对象中----文字如何围绕图片分布
+                     2.下拉面板中----如何实现面板折叠和面板删除
+                     3.一键返回顶端功能-->

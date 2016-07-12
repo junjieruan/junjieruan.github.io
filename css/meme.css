@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    height: 510px;
+    /*overflow: hidden;*/
+    position: relative;
+}
+
+.fontpage{
+    height: 3000px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+}
+.fonttab{
+    position: fixed;
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+}
+
+.fonttab li{
+    width: 20%;
+    height: 50px;
+    background-color: hotpink;
+    float: left;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.fonttab li:hover{
+    background-color: #c7254e;
+}
+
+[class*=page1]{
+    height: 820px;
+    width: 100%;;
+    background-color: #ffffff;
+    list-style: none;
+    overflow: hidden;
+}
+
+[class*=head1]{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+    border: 2px solid #ffffff;
+    left: 43%;
+    margin-top: -77px;
+    transform: rotate(45deg);
+}
+
+[class*=title1]{
+    position:relative;
+    font-size: 50px;
+    font-weight: bold;
+    color: hotpink;
+    font-family: "宋体";
+    text-align: center;
+    top: 150px;
+}
+
+[class*=content1]{
+    position:relative;
+    font-size: 18px;
+    font-weight: bold;
+    color: #6e6e6e;
+    font-family: "宋体";
+    text-align: center;
+    top: 250px;
+}
+
+
+                                        /*第二种样式*/
+[class*=page2]{
+    height: 820px;
+    width: 100%;;
+    background-color: pink;
+    list-style: none;
+    overflow: hidden;
+}
+[class*=head2]{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    left: 43%;
+    margin-top: -77px;
+    transform: rotate(45deg);
+}
+
+[class*=title2]{
+    position:relative;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "宋体";
+    text-align: center;
+    top: 150px;
+}
+
+[class*=content2]{
+     position:relative;
+     font-size: 18px;
+     font-weight: bold;
+     color: #ffffff;
+     font-family: "宋体";
+     text-align: center;
+     top: 250px;
+ }

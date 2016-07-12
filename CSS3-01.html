@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <!--<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/rollbar.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">               <!--头部  navbar-inverse白字黑框 navbar-fixed-top固定在顶部-->
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="jpg/blogbrand.png" style="height: 40px;margin-top: -9px">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active "><a href="aboutme.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 主页</a></li>
+                    <li><a href="ThisWeb.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 关于本站</a></li>
+                    <li><a href="visit.html"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> 留言墙</a></li>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group ">
+                        <input type="text" class="form-control" placeholder="请输入要搜索的关键字">
+                    </div>
+                    <button type="submit" class="btn">搜索</button>
+                </form>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+</nav>
+
+<div class="rjj-body" style="background-color: #f9f9f9">                 <!--body底色-->
+    <div class="container">
+        <div class="row">                                         <!--栅格系统-->
+            <div class="col-md-8">            <!--内容主体：1.每日提示 2.文章列表 3.分页条-->
+
+                <div class="article-list">                                   <!--文章列表-->
+                    <article class="excerpt excerpt-first">                 <!--article H5新标签  blog中文本-->
+                        <div class="page-header" style="text-align: center">
+                            <h1>CSS3新功能总结<small>Page1</small></h1><br/>
+                            <p>关键词：CSS &nbsp; CSS3 &nbsp;HTML </p>
+                        </div>
+                        <div class="section1" style="font-size: 16px">
+                            <h2>CSS3中的动画特效</h2><br/>
+                            <h3>1.2D 3D转换</h3><br/>
+                            <h4>2D转换方法<span class="label label-info">translate(),rotate(),scale(),skew()</span></h4><br/>
+                            <div class="alert alert-success" role="alert">
+                            <p>注意：通过transform来引入动画,且注意各个浏览器的适配：<br/>
+                                <strong>-webkit-</strong> <small>适配safari chrome</small><br/>
+                                <strong>-ms-</strong> <small>适配IE</small><br/>
+                                <strong>-o-</strong> <small>适配opera</small><br/>
+                                <strong>-moz-</strong> <small>适配Firefox</small><br/>
+                        </div>
+                            1.1<span class="label label-info">translate()</span><br/><br/>
+                            <p>作用：移动元素。<span class="label label-info">translate(水平移动距离，垂直移动距离)</span></p>
+                            <p>新建一个<span class="label label-default">index.html</span></p>
+                            <img src="jpg/css01.png">
+                            <p>新建一个<span class="label label-default">style.css</span></p>
+                            <img src="jpg/css02.png" style="width:300px;">
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css03.png"><br/><br/>
+
+                            1.2<span class="label label-info">rotate()</span><br/><br/>
+                            <p>作用：拉伸元素。<span class="label label-info">rotate(旋转度数)</span></p>
+                            <p><span class="label label-default">index.html</span>同上，<span class="label label-default">style.css</span>书写如下</p>
+                            <img src="jpg/css04.png" style="width:300px;">
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css05.png"><br/><br/>
+
+                            1.3<span class="label label-info">scale()</span><br/><br/>
+                            <p>作用：旋转元素。<span class="label label-info">scale(水平伸缩倍数,垂直伸缩倍数)</span></p>
+                            <p><span class="label label-default">index.html</span>同上，<span class="label label-default">style.css</span>书写如下：(增加margin-top:100px;便于观察)</p>
+                            <img src="jpg/css06.png" style="width:300px;">
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css07.png"><br/><br/>
+
+                            1.4<span class="label label-info">skew()</span><br/><br/>
+                            <p>作用：对元素在XY轴旋转。<span class="label label-info">skew(X轴旋转度数,Y轴旋转度数)</span></p>
+                            <p><span class="label label-default">index.html</span>同上，<span class="label label-default">style.css</span>书写如下：(增加margin-top:100px;便于观察)</p>
+                            <img src="jpg/css08.png" style="width:300px;">
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css09.png"><br/><br/>
+
+                            <h4>3D转换方法</h4>
+                            <p>作用：对元素在XY上压缩像素。<span class="label label-info">rotateX(压缩角度)，rotateY(压缩角度)</span></p>
+                            <p><span class="label label-default">index.html</span>同上，<span class="label label-default">style.css</span>书写如下：(增加margin-top:100px;便于观察)</p>
+                            <img src="jpg/css10.png" style="width:300px;">
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css11.png"><br/><br/>
+                            <hr/>
+
+                            <h3>2.转换</h3><br/>
+                            <p>CSS3过渡是元素从一种样式转换成另一种样式。体现在两个方向：动画效果的CSS和动画执行的时间</p>
+                            <div class="alert alert-success" role="alert">
+                                <p>属性：<br/>transition-property(过渡的名称)<br/>transition-duration(过渡效果花费的时间)
+                                    <br/>transition-timing-function(过渡效果的时间曲线)<br/>transition-delay(过渡效果开始时间)</p>
+                            </div>
+                            <p>新建一个<span class="label label-default">transition.html</span></p>
+                            <img src="jpg/css16.png" style="width:300px">
+                            <p>新建一个<span class="label label-default">transition.css</span></p>
+                            <img src="jpg/css17.png" style="width:300px;">
+                            <p>运行效果如下(效果为hover时旋转变大)：</p>
+                            <img src="jpg/css18.png"><br/><br/>
+                            <img src="jpg/css19.png"><br/><br/>
+                            <hr/>
+
+                            <h3>3.动画</h3><br/>
+                            <p>CSS3的动画需要遵循@keyframes规则。包含：动画的时长和动画的名称</p>
+                            <p>新建一个<span class="label label-default">animindex.html</span></p>
+                            <img src="jpg/css12.png" style="width:300px">
+                            <p>新建一个<span class="label label-default">animindex.css</span></p>
+                            <img src="jpg/css13.png" style="width:300px;">
+                            <p>运行效果如下(效果为正方形顺时针运动)：</p>
+                            <img src="jpg/css14.png"><br/><br/>
+                            <img src="jpg/css15.png"><br/><br/>
+                            <hr/>
+
+                            <h3>4.多列</h3><br/>
+                            <p>CSS3中，可以创建多列对文本或区域进行布局</p>
+                            <div class="alert alert-success" role="alert">
+                                <p>属性：<br/>column-count(分列的数量)<br/>column-gap(列间间距)
+                                    <br/>column-rule(列间间隔线的样式)</p>
+                            </div>
+                            <p>新建一个<span class="label label-default">csyindex.html</span></p>
+                            <img src="jpg/css20.png" style="width:300px">
+                            <p>新建一个<span class="label label-default">csymindex.css</span></p>
+                            <img src="jpg/css21.png" style="width:300px;">
+                            <p>运行效果如下：</p>
+                            <img src="jpg/css22.png" style="width:300px;"><br/><br/>
+                            <strong>*实现瀑布流效果</strong><br/>
+                            <p>对父元素设置column-width(列宽)和column-gap(列间间距)，再对图片元素设置width(图片宽)和上边距(margin-top)。css设计如下：</p>
+                            <img src="jpg/css23.png" style="width:300px;">
+
+                        </div>
+                    </article>
+
+                </div>
+                <div class="page">                                              <!--分页条-->
+                    <ul class="pagination pagination-sm">
+                        <!--<li><a href="#">首页</a></li>-->
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">上一页</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="CSS3-02.html">2</a></li>
+                        <li><a href="CSS3-03.html">3</a></li>
+                        <li>
+                            <a href="CSS3-02.html" aria-label="Next">
+                                <span aria-hidden="true">下一页</span>
+                            </a>
+                        </li>
+                        <li><a href="#">末页</a></li>
+                        <li><span class="totalpage">共-3-页</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4"> <!--侧边栏内容   1.本站介绍 2.文章分类 3.精品文章 4.访客留言 5.热点知识-->
+                <aside>
+                    <div class="panel panel-default">          <!--本站介绍 pannel面板：头部 内容 脚注-->
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-user"></span>
+                            广工潇洒哥</div>
+                        <div class="panel-body">
+                            <div class="media">                                     <!--媒体对象-->
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="jpg/wechat.jpg">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    这是一个程序员的独立博客站，主要用于分享与编程技术相关的内容， 同时这里也是博主
+                                    记录工作学习中遇到的问题及其解决方案的地方。更多信息请点击：<a href="ThisWeb.html">关于本站.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <ul>
+                                <li><a href="https://github.com"><img src="jpg/github.png"></a></li>
+                                <li><a href="https://weibo.com"><img src="jpg/xlwb.png"></a></li>
+                                <li><a href="https://www.douban.com"><img src="jpg/douban.png"></a></li>
+                                <li><a href="https://www.twitter.com"><img src="jpg/twitter.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>               <!--1.本站介绍-->
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon glyphicon-tags"></span>
+                            文以类聚
+                        </div>
+                        <div class="panel-body">
+                            <span class="label label-default">ASP.NET MVC   (8)</span>
+                            <span class="label label-primary">开源工具  (5)</span><br/>
+                            <span class="label label-success">前端  (11)</span>
+                            <span class="label label-info">网络舆情  (1)</span><br/>
+                            <span class="label label-warning">复杂网络  (0)</span>
+                            <span class="label label-danger">推荐系统  (1)</span>
+                        </div>
+                    </div>               <!--2.文章分类-->
+                    <div class="panel  panel-default">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-leaf"></span>
+                            炙手可热
+                            <span class=" glyphicon glyphicon-remove-circle pull-right"></span>
+                            <a data-toggle="collapse" href="#collapseOne">   <!--Collapse插件  data-toggle+href+折叠对象ul中id="collapseOne"-->
+                                <span class="glyphicon glyphicon-upload pull-right"></span>
+                            </a>
+                        </div>
+                        <ul class="list-group" id="collapseOne">                             <!--列表组-->
+                            <li class="list-group-item">
+                                <span class="posttitle"><a href="#">开篇</a></span>       <!--徽章  样式分离-->
+                                <span class="badge">287</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="posttitle"><a href="#">如何使用Bootstrap typeahead插件...</a></span>
+                                <span class="badge">123</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="posttitle"><a href="#">使用Lucene对分词结果进行倒排索引</a></span>
+                                <span class="badge">68</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="posttitle"><a href="#">总结软件架构特征</a></span>
+                                <span class="badge">50</span>
+                            </li>
+                        </ul>
+                    </div>              <!--3.精品文章-->
+                    <div class="panel  panel-default">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-tree-deciduous"></span>
+                            雁过留声
+                            <span class=" glyphicon glyphicon-remove-circle pull-right"></span>
+                            <a data-toggle="collapse" href="#collapseTwo">   <!--Collapse插件  data-toggle+href+折叠对象ul中id="collapseOne"-->
+                                <span class="glyphicon glyphicon-upload pull-right"></span>
+                            </a>
+                        </div>
+                        <ul class="list-group" id="collapseTwo">                             <!--列表组-->
+                            <li class="list-group-item">
+                                <div class="media">                                                 <!--媒体对象-->
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="jpg/visitor1.jpg"  alt="">   <!--圆形图片-->
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <pre>好生羡慕</pre>                        <!--代码块显示-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">                                                 <!--媒体对象-->
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="jpg/visitor1.jpg"  alt="">   <!--圆形图片-->
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <pre>好生羡慕</pre>                        <!--代码块显示-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">                                                 <!--媒体对象-->
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="jpg/visitor2.png"  alt="">   <!--圆形图片-->
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <pre>我是傻逼</pre>                        <!--代码块显示-->
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>               <!--4.访客留言-->
+                    <!--<span class=" glyphicon glyphicon-remove-circle pull-right" data-toggle="collapse" href="#collapseOne"></span>-->
+                    <!--<span class="panel-toggle glyphicon glyphicon-upload pull-right"></span>-->
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>                                                              <!--尾部-->
+    <div class="footbar">
+        <div class="container">
+            <div class=" navbar-static-bottom">
+                Copyright © 2016 <a href="#">RJJblog</a>  |联系我 :
+                <a href="#">1259251208@qq.com</a>  |  All Rights Reserved.|  豫ICP备16019396号-1
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="javascript:;" id="rollbar" title="回到顶端">                          <!--快速返回头部图标-->
+    <img src="jpg/ico-rocket.png" height="64" width="64"></img>
+</a>
+
+</body>
+</html>
+
+<!--问题总结：
+         未解决问题：1.媒体对象中----文字如何围绕图片分布
+                     2.下拉面板中----如何实现面板折叠和面板删除
+                     3.一键返回顶端功能-->

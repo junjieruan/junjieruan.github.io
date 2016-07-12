@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <!--<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/rollbar.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">               <!--头部  navbar-inverse白字黑框 navbar-fixed-top固定在顶部-->
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="jpg/blogbrand.png" style="height: 40px;margin-top: -9px">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active "><a href="aboutme.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 主页</a></li>
+                    <li><a href="ThisWeb.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 关于本站</a></li>
+                    <li><a href="visit.html"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> 留言墙</a></li>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group ">
+                        <input type="text" class="form-control" placeholder="请输入要搜索的关键字">
+                    </div>
+                    <button type="submit" class="btn">搜索</button>
+                </form>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+</nav>
+
+<div class="rjj-body" style="background-color: #f9f9f9">                 <!--body底色-->
+    <div class="container">
+        <div class="row">                                         <!--栅格系统-->
+            <div class="col-md-8">            <!--内容主体：1.每日提示 2.文章列表 3.分页条-->
+
+                <div class="article-list">                                   <!--文章列表-->
+                    <article class="excerpt excerpt-first">                 <!--article H5新标签  blog中文本-->
+                        <div class="page-header" style="text-align: center">
+                            <h1>JavaScript学习笔记之数组的深拷贝</h1><br/>
+                            <p>关键词：JavaScript</p>
+                        </div>
+                        <div class="section1" style="font-size: 16px">
+                           <p style="text-indent: 2em;">由于JavaScript的数据分为‘原始类型’和‘引用类型’，数组Array是引用类型，与c语言类似，对数
+                               组直接用‘=’号赋值的话，赋给变量的值只是该数组的引用地址（c语言中叫指针），并没有实现数
+                               组数据的拷贝，两个数组共享同一组数据，也就是说一旦修改这两个数组中的任何一方，该修改也会
+                               在另一方体现出来。具体代码如下：
+                           </p><br/>
+                            错误示例1：
+                            <pre>var arr1 = [<span style="color:darkorange;">1,2,3,4,5</style></span>],arr2;
+arr2 = arr1;        <span style="color:#8e908c;">//简单赋值</style></span>
+console.<span style="color:darkorange;">log</style></span>(arr2);  <span style="color:#8e908c;">//输出[1,2,3,4,5],说明赋值成功</style></span>
+arr1.<span style="color:darkorange;">length</style></span> = <span style="color:darkorange;">0</style></span>;    <span style="color:#8e908c;">//清空数组1</style></span>
+console.<span style="color:darkorange;">log</style></span>(arr2)   <span style="color:#8e908c;">//此处输出[]；空数组，说明两个数组共享数据</style></span></pre><br/>
+                            <p style="text-indent: 2em;">要想实现数组的深拷贝，除了for循环遍历赋值外，一维数组还可以使用‘slice’或者’concat’方法：</p><br/>
+                            <p>一维数组深拷贝：</p>
+                            <pre>var arr1 = [<span style="color:darkorange;">1,2,3,4,5</style></span>],arr2,arr3;
+arr2 = arr1.slice(<span style="color:darkorange;">0</style></span>);   <span style="color:#8e908c;">//使用slice方法</style></span>
+arr3 = arr1.<span style="color:darkorange;">concat</style></span>();   <span style="color:#8e908c;">//使用concat方法</style></span>
+arr1.<span style="color:darkorange;">length</style></span> = <span style="color:darkorange;">0</style></span>;        <span style="color:#8e908c;">//清空数组1</style></span>
+console.<span style="color:darkorange;">log</style></span>(<span style="color:#718c00;">'arr2: '</style></span> + arr2);   <span style="color:#8e908c;">//输出arr2: [1,2,3,4,5]</style></span>
+console.<span style="color:darkorange;">log</style></span>(<span style="color:#718c00;">'arr3: '</style></span> + arr3);   <span style="color:#8e908c;">//输出arr3: [1,2,3,4,5]</style></span></pre><br/>
+                            <p style="text-indent: 2em;">关于slice和concat两个方法更详细的内容可以看这里
+                                <a href="http://www.w3school.com.cn/jsref/jsref_slice_string.asp">slice方法</a>
+                                <a href="http://www.w3school.com.cn/jsref/jsref_concat_array.asp">concat方法</a></p>
+                            <p style="text-indent: 2em;">对于一维数组来说slice和concat方法能够实现数组的深拷贝，但如果原数组是多维的比如是<span style="background-color:#eee">[1,2,3,[4,5]]</span>这样的数组，由于对于二维数组或者多维数组来说，它的第一维元素里面存储的是第二维元素的地址，所以在高维层面的数据依旧是共享的，具体代码如下：</p><br/>
+                            错误示例2：
+                            <pre><code>var arr1 = [1,2,3,[4,5]],arr2,arr3;
+arr2 = arr1.slice(0);
+arr3 = arr1.concat();
+console.log(arr2[3][1]);    //输出5
+arr1[3][1] = 0;             //改变原数组中的高维元素
+console.log(arr2[3][1]);    //输出0
+console.log(arr3[3][1]);    //输出0</code></pre><br/>
+                            <p style="text-indent: 2em;">要想实现高维数组的深拷贝，可用JS函数来实现：</p><br/>
+                            多维数组的深拷贝：
+                            <pre>function deepCopy(arr) {
+        <span style="color:#8959a8;">var</style></span> <span style="color:darkorange;">result</style></span> = [];
+        <span style="color:#8959a8;">for</style></span> (<span style="color:#8959a8;">var</style></span> i = <span style="color:darkorange;">0</style></span>; i < arr.length; i++) {  //遍历原数组
+            <span style="color:#8959a8;">if</style></span> (arr[i] instanceof Array){
+                <span style="color:darkorange;">result</style></span>[i] = deepCopy(arr[i]);   //若数组多维，则递归调用函数
+            }
+            <span style="color:#8959a8;">else</style></span> <span style="color:darkorange;">result</style></span>[i] = arr[i];
+        }
+        <span style="color:#8959a8;">return</style></span> <span style="color:darkorange;">result</style></span>;
+    }
+    //现在我们来试试多维数组的深拷贝
+    <span style="color:#8959a8;">var</style></span> arr1 = [<span style="color:darkorange;">1,2,3,</style></span>[<span style="color:darkorange;">4,5,6</style></span>]],arr2;
+    arr2 = deepCopy(arr1);
+    arr1[<span style="color:darkorange;">3</style></span>][<span style="color:darkorange;">0</style></span>] = <span style="color:darkorange;">0</style></span></style></span>;     //修改高维元素
+    console.log(arr2[<span style="color:darkorange;">3</style></span>][<span style="color:darkorange;">0</style></span>]);    //输出<span style="color:darkorange;">4</style></span>，没有改变</pre><br>
+<p>上述函数在JQuery可表示如下：</p><br>
+                            <pre>arr2 = <span style="color:#c82829;">$.</style></span>extend(<span style="color:#8959a8;">true</style></span>, {}, arr1);</pre><br/>
+                        </div>
+                    </article>
+
+                </div>
+                <div class="page">                                              <!--分页条-->
+                    <ul class="pagination pagination-sm">
+                        <!--<li><a href="#">首页</a></li>-->
+                        <li class="active"><a href="#">1</a></li>
+                        <li><span class="totalpage">共-1-页</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4"> <!--侧边栏内容   1.本站介绍 2.文章分类 3.精品文章 4.访客留言 5.热点知识-->
+                <aside>
+                    <div class="panel panel-default">          <!--本站介绍 pannel面板：头部 内容 脚注-->
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-user"></span>
+                            广工潇洒哥</div>
+                        <div class="panel-body">
+                            <div class="media">                                     <!--媒体对象-->
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="jpg/wechat.jpg">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    这是一个程序员的独立博客站，主要用于分享与编程技术相关的内容， 同时这里也是博主
+                                    记录工作学习中遇到的问题及其解决方案的地方。更多信息请点击：<a href="ThisWeb.html">关于本站.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <ul>
+                                <li><a href="https://github.com"><img src="jpg/github.png"></a></li>
+                                <li><a href="https://weibo.com"><img src="jpg/xlwb.png"></a></li>
+                                <li><a href="https://www.douban.com"><img src="jpg/douban.png"></a></li>
+                                <li><a href="https://www.twitter.com"><img src="jpg/twitter.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>               <!--1.本站介绍-->
+
+
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>                                                              <!--尾部-->
+    <div class="footbar">
+        <div class="container">
+            <div class=" navbar-static-bottom">
+                Copyright © 2016 <a href="#">RJJblog</a>  |联系我 :
+                <a href="#">1259251208@qq.com</a>  |  All Rights Reserved.|  豫ICP备16019396号-1
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="javascript:;" id="rollbar" title="回到顶端">                          <!--快速返回头部图标-->
+    <img src="jpg/ico-rocket.png" height="64" width="64"></img>
+</a>
+
+</body>
+</html>
+
+<!--问题总结：
+         未解决问题：1.媒体对象中----文字如何围绕图片分布
+                     2.下拉面板中----如何实现面板折叠和面板删除
+                     3.一键返回顶端功能-->

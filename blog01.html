@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <!--<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/rollbar.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">               <!--头部  navbar-inverse白字黑框 navbar-fixed-top固定在顶部-->
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="jpg/blogbrand.png" style="height: 40px;margin-top: -9px">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active "><a href="aboutme.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 主页</a></li>
+                    <li><a href="ThisWeb.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 关于本站</a></li>
+                    <li><a href="visit.html"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> 留言墙</a></li>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group ">
+                        <input type="text" class="form-control" placeholder="请输入要搜索的关键字">
+                    </div>
+                    <button type="submit" class="btn">搜索</button>
+                </form>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </div>
+</nav>
+
+<div class="rjj-body" style="background-color: #f9f9f9">                 <!--body底色-->
+    <div class="container">
+        <div class="row">                                         <!--栅格系统-->
+            <div class="col-md-8">            <!--内容主体：1.每日提示 2.文章列表 3.分页条-->
+
+                <div class="article-list">                                   <!--文章列表-->
+                    <article class="excerpt excerpt-first">                 <!--article H5新标签  blog中文本-->
+                        <div class="page-header" style="text-align: center">
+                            <h1>jQuery中的Ajax<small>Page1</small></h1><br/>
+                            <p>关键词：Ajax &nbsp; jQuery &nbsp; php </p>
+                        </div>
+                        <div class="section1" style="font-size: 16px">
+                              <h2>load()方法</h2><br/>
+                              <h3>1.载入HTML文档</h3><br/>
+                              <p class="label label-success">结构：load（url，[.data]，[.callback]）</p>
+                              <p>首先构造一个被<span class="label label-info">load()方法</span>加载并追加到页面中的HTML，名字为<span class="label label-default">ajax.html</span></p>
+                             <img src="jpg/blog0101.png" style="width: 300px;">
+                             <p>然后新建一个空白页<span class="label label-default">index.html</span>。button按钮用来触发Ajax事件，id为"resText"的元素用来显示追加的HTML内容</p>
+                            <img src="jpg/blog0102.png" style="width: 300px;">
+                            <p>然后编写jQuery代码，单击id为"send"的按钮调用<span class="label label-info">load()方法</span>，然后把<span class="label label-default">ajax.html</span>的内容加载到id为"resText"的元素里</p>
+                            <img src="jpg/blog0103.png">
+                            <p>当按钮被点击后，出现如下界面：</p>
+                            <img src="jpg/blog0104.png"><br/>
+                            <h3>2.筛选载入的HTML文档</h3><br/>
+                            <p>若只需要某些特定元素加载，可使用<span class="label label-info">load()方法</span>的URL参数达到筛选目的</p>
+                            <p>如只加载<span class="label label-default">ajax.html</span>中class为"para"的内容，可使用如下代码：</p>
+                            <img src="jpg/blog0105.png">
+                            <p>效果如图</p>
+                            <img src="jpg/blog0106.png">
+                            <br/>
+                            <h3>3.传递方式</h3><br/>
+                            <p>由参数data决定，若有参数则采用GET方式，否则转化为POST方式</p>
+                            <h3>4.回调参数</h3><br/>
+                            <p>load()提供了回调函数，该函数有三个参数，分别代表请求返回的内容、请求状态和XMLHttpRequest对象</p>
+                            <img src="jpg/blog0107.png" style="width: 300px;">
+                            <p><small><strong>*无论Ajax请求是否成功，只要当请求完成(complete)，回调函数(callback)就被触发</strong></small></p>
+                            <br/>
+                            <p>把上例中加载的目的页改成不存在的<span class="label label-default">ajax1.html</span>，则请求状态为error，并显示</p>
+                            <img src="jpg/blog0108.png" style="width: 300px;">
+                        </div>
+                    </article>
+
+                </div>
+                <div class="page">                                              <!--分页条-->
+                    <ul class="pagination pagination-sm">
+                        <!--<li><a href="#">首页</a></li>-->
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">上一页</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="blog01-01.html">2</a></li>
+                        <li><a href="blog01-02.html">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="blog01-01.html" aria-label="Next">
+                                <span aria-hidden="true">下一页</span>
+                            </a>
+                        </li>
+                        <li><a href="#">末页</a></li>
+                        <li><span class="totalpage">共-4-页</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4"> <!--侧边栏内容   1.本站介绍 2.文章分类 3.精品文章 4.访客留言 5.热点知识-->
+                <aside>
+                    <div class="panel panel-default">          <!--本站介绍 pannel面板：头部 内容 脚注-->
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-user"></span>
+                            广工潇洒哥</div>
+                        <div class="panel-body">
+                            <div class="media">                                     <!--媒体对象-->
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="jpg/wechat.jpg">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    这是一个程序员的独立博客站，主要用于分享与编程技术相关的内容， 同时这里也是博主
+                                    记录工作学习中遇到的问题及其解决方案的地方。更多信息请点击：<a href="ThisWeb.html">关于本站.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-footer">
+                            <ul>
+                                <li><a href="https://github.com"><img src="jpg/github.png"></a></li>
+                                <li><a href="https://weibo.com"><img src="jpg/xlwb.png"></a></li>
+                                <li><a href="https://www.douban.com"><img src="jpg/douban.png"></a></li>
+                                <li><a href="https://www.twitter.com"><img src="jpg/twitter.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>               <!--1.本站介绍-->
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon glyphicon-tags"></span>
+                            文以类聚
+                        </div>
+                        <div class="panel-body">
+                            <span class="label label-default">ASP.NET MVC   (8)</span>
+                            <span class="label label-primary">开源工具  (5)</span><br/>
+                            <span class="label label-success">前端  (11)</span>
+                            <span class="label label-info">网络舆情  (1)</span><br/>
+                            <span class="label label-warning">复杂网络  (0)</span>
+                            <span class="label label-danger">推荐系统  (1)</span>
+                        </div>
+                    </div>               <!--2.文章分类-->
+                    <div class="panel  panel-default">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-leaf"></span>
+                            炙手可热
+                            <span class=" glyphicon glyphicon-remove-circle pull-right"></span>
+                            <a data-toggle="collapse" href="#collapseOne">   <!--Collapse插件  data-toggle+href+折叠对象ul中id="collapseOne"-->
+                                <span class="glyphicon glyphicon-upload pull-right"></span>
+                            </a>
+                        </div>
+                        <ul class="list-group" id="collapseOne">                             <!--列表组-->
+                            <li class="list-group-item">
+                                <span class="posttitle"><a href="#">开篇</a></span>       <!--徽章  样式分离-->
+                                <span class="badge">287</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="posttitle"><a href="#">如何使用Bootstrap typeahead插件...</a></span>
+                                <span class="badge">123</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="posttitle"><a href="#">使用Lucene对分词结果进行倒排索引</a></span>
+                                <span class="badge">68</span>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="posttitle"><a href="#">总结软件架构特征</a></span>
+                                <span class="badge">50</span>
+                            </li>
+                        </ul>
+                    </div>              <!--3.精品文章-->
+                    <div class="panel  panel-default">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-tree-deciduous"></span>
+                            雁过留声
+                            <span class=" glyphicon glyphicon-remove-circle pull-right"></span>
+                            <a data-toggle="collapse" href="#collapseTwo">   <!--Collapse插件  data-toggle+href+折叠对象ul中id="collapseOne"-->
+                                <span class="glyphicon glyphicon-upload pull-right"></span>
+                            </a>
+                        </div>
+                        <ul class="list-group" id="collapseTwo">                             <!--列表组-->
+                            <li class="list-group-item">
+                                <div class="media">                                                 <!--媒体对象-->
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="jpg/visitor1.jpg"  alt="">   <!--圆形图片-->
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <pre>好生羡慕</pre>                        <!--代码块显示-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">                                                 <!--媒体对象-->
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="jpg/visitor1.jpg"  alt="">   <!--圆形图片-->
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <pre>好生羡慕</pre>                        <!--代码块显示-->
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="media">                                                 <!--媒体对象-->
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img class="media-object img-circle" src="jpg/visitor2.png"  alt="">   <!--圆形图片-->
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <pre>我是傻逼</pre>                        <!--代码块显示-->
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>               <!--4.访客留言-->
+                    <!--<span class=" glyphicon glyphicon-remove-circle pull-right" data-toggle="collapse" href="#collapseOne"></span>-->
+                    <!--<span class="panel-toggle glyphicon glyphicon-upload pull-right"></span>-->
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>                                                              <!--尾部-->
+    <div class="footbar">
+        <div class="container">
+            <div class=" navbar-static-bottom">
+                Copyright © 2016 <a href="#">RJJblog</a>  |联系我 :
+                <a href="#">1259251208@qq.com</a>  |  All Rights Reserved.|  豫ICP备16019396号-1
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="javascript:;" id="rollbar" title="回到顶端">                          <!--快速返回头部图标-->
+    <img src="jpg/ico-rocket.png" height="64" width="64"></img>
+</a>
+
+</body>
+</html>
+
+<!--问题总结：
+         未解决问题：1.媒体对象中----文字如何围绕图片分布
+                     2.下拉面板中----如何实现面板折叠和面板删除
+                     3.一键返回顶端功能-->
