@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35d7c83c-b37e-4a44-9bbb-8ce455ccc06e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aboutme.html" afterPath="$PROJECT_DIR$/aboutme.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/meme.css" afterPath="$PROJECT_DIR$/css/meme.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meme.html" afterPath="$PROJECT_DIR$/meme.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/meme.js" afterPath="$PROJECT_DIR$/js/meme.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="webjunjie.github.io.iws" />
@@ -37,7 +33,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.428571" vertical-offset="2109" max-vertical-offset="2926">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2109" max-vertical-offset="2926">
               <caret line="142" column="21" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
               <folding>
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -52,7 +48,7 @@
       <file leaf-file-name="aboutme.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aboutme.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.214286" vertical-offset="1824" max-vertical-offset="2603">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1824" max-vertical-offset="2603">
               <caret line="398" column="58" selection-start-line="398" selection-start-column="58" selection-end-line="398" selection-end-column="58" />
               <folding>
                 <element signature="n#article#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -68,21 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meme.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="meme.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/meme.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8031088" vertical-offset="48" max-vertical-offset="1368">
+            <state vertical-scroll-proportion="-16.607143" vertical-offset="48" max-vertical-offset="1368">
               <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="meme.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="meme.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/meme.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="2470">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.3756178" vertical-offset="0" max-vertical-offset="2470">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -91,7 +87,7 @@
       <file leaf-file-name="meme.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/meme.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
+            <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="570">
               <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
               <folding>
                 <element signature="e#0#37#0" expanded="false" />
@@ -148,8 +144,8 @@
         <option value="$PROJECT_DIR$/aboutme.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/meme.js" />
-        <option value="$PROJECT_DIR$/css/meme.css" />
         <option value="$PROJECT_DIR$/meme.html" />
+        <option value="$PROJECT_DIR$/css/meme.css" />
       </list>
     </option>
   </component>
@@ -199,7 +195,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webjunjie.github.io" />
+              <option name="myItemId" value="junjieruan.github.io" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -209,21 +205,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webjunjie.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webjunjie.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webjunjie.github.io" />
+              <option name="myItemId" value="junjieruan.github.io" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -238,7 +220,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/webstorm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="FullScreen" value="false" />
@@ -310,7 +292,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -318,19 +300,19 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2489019" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -676,52 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6243822" vertical-offset="3706" max-vertical-offset="4636">
           <caret line="432" column="19" selection-start-line="432" selection-start-column="19" selection-end-line="432" selection-end-column="19" />
-          <folding>
-            <element signature="e#205#224#0" expanded="false" />
-            <element signature="e#237#267#0" expanded="false" />
-            <element signature="e#275#363#0" expanded="false" />
-            <element signature="e#390#510#0" expanded="false" />
-            <element signature="e#521#542#0" expanded="false" />
-            <element signature="e#557#578#0" expanded="false" />
-            <element signature="e#595#664#0" expanded="false" />
-            <element signature="e#693#756#0" expanded="false" />
-            <element signature="e#917#1051#0" expanded="false" />
-            <element signature="e#1062#1196#0" expanded="false" />
-            <element signature="e#1436#1551#0" expanded="false" />
-            <element signature="e#2025#2158#0" expanded="false" />
-            <element signature="e#2181#2201#0" expanded="false" />
-            <element signature="e#2221#2241#0" expanded="false" />
-            <element signature="e#2254#2323#0" expanded="false" />
-            <element signature="e#2336#2426#0" expanded="false" />
-            <element signature="e#2434#2494#0" expanded="false" />
-            <element signature="e#2508#2722#0" expanded="false" />
-            <element signature="e#2744#2875#0" expanded="false" />
-            <element signature="e#2892#2914#0" expanded="false" />
-            <element signature="e#2932#2996#0" expanded="false" />
-            <element signature="e#3010#3101#0" expanded="false" />
-            <element signature="e#3128#3270#0" expanded="false" />
-            <element signature="e#3296#3383#0" expanded="false" />
-            <element signature="e#3416#3527#0" expanded="false" />
-            <element signature="e#3554#3729#0" expanded="false" />
-            <element signature="e#3752#3779#0" expanded="false" />
-            <element signature="e#3781#3930#0" expanded="false" />
-            <element signature="e#3946#4037#0" expanded="false" />
-            <element signature="e#4048#4104#0" expanded="false" />
-            <element signature="e#4112#4250#0" expanded="false" />
-            <element signature="e#4263#4336#0" expanded="false" />
-            <element signature="e#4356#4411#0" expanded="false" />
-            <element signature="e#4425#4530#0" expanded="false" />
-            <element signature="e#4547#4686#0" expanded="false" />
-            <element signature="e#4738#4999#0" expanded="false" />
-            <element signature="e#5287#5474#0" expanded="false" />
-            <element signature="e#5483#5596#0" expanded="false" />
-            <element signature="e#5604#5719#0" expanded="false" />
-            <element signature="e#5736#5761#0" expanded="false" />
-            <element signature="e#5768#5842#0" expanded="false" />
-            <element signature="e#5854#5966#0" expanded="false" />
-            <element signature="e#5976#6038#0" expanded="false" />
-            <element signature="e#6124#6190#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -739,7 +675,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aboutme.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.214286" vertical-offset="1824" max-vertical-offset="2603">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1824" max-vertical-offset="2603">
           <caret line="398" column="58" selection-start-line="398" selection-start-column="58" selection-end-line="398" selection-end-column="58" />
           <folding>
             <element signature="n#article#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -756,7 +692,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.428571" vertical-offset="2109" max-vertical-offset="2926">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2109" max-vertical-offset="2926">
           <caret line="142" column="21" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -777,18 +713,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/meme.css">
+    <entry file="file://$PROJECT_DIR$/meme.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="361" max-vertical-offset="2470">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state vertical-scroll-proportion="-16.607143" vertical-offset="48" max-vertical-offset="1368">
+          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meme.html">
+    <entry file="file://$PROJECT_DIR$/css/meme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8031088" vertical-offset="48" max-vertical-offset="1368">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.3756178" vertical-offset="0" max-vertical-offset="2470">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="21" />
           <folding />
         </state>
       </provider>
